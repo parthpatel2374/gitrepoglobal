@@ -1,4 +1,40 @@
+thislist=[1, 2, 3, 4, 5, 6]
+
+
+
+
 """
+cont from loop list...
+
+thislist.clear()
+print(thislist)
+del thislist[2]
+thislist.pop()
+thislist.pop(3)
+thislist.remove(2)
+print(thislist)
+del thislist
+print(thislist)
+fruits=["apple", "banna", "mango"]
+thislist.extend(fruits)
+fruits.extend(thislist)
+print(thislist)
+print(fruits)
+thislist.append(4)
+print(thislist)
+thislist.insert(1, 1.5)
+print(thislist)
+print(thislist[1:2])
+print(len(thislist))
+print(thislist[-3])
+print(thislist)
+print(type(thislist))
+x=8
+y=(x<<2)
+z=(x>>2)
+print(y,z)
+print(bool("hellp"))
+print(bool(15))
 cont from python booleans...
 
 a = "Hi I am the \"\n\" #creator"
