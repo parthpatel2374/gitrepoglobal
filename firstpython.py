@@ -1,9 +1,28 @@
-thislist=[1, 2, 3, 4, 5, 6]
+
+
+
 
 
 
 
 """
+cont from tuples...
+
+thislist=[1, 6, 4, 3, 5, 2]
+cpylist=thislist.copy()
+
+list1=thislist+cpylist
+print(list1)
+cpylist.append(100)
+print(thislist)
+print(cpylist)
+thislist.extend(cpylist)
+print(thislist)
+thislist.sort(reverse=True)
+print(thislist)
+newlist=[x for x in thislist if x<5]
+print(thislist)
+print(newlist)
 cont from loop list...
 
 thislist.clear()
