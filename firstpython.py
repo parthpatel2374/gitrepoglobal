@@ -5,12 +5,130 @@
 
 
 
+
+
 """
+cont from functions.....
+
+fruit={
+ 
+	"mango":{
+    "season":"summer",
+    "color":"yellow",
+    "price":120
+    },
+	"apple":{
+    "season":"all",
+    "color":"red",
+    "price":70
+    },
+	"grape":{
+    "season":"summer",
+    "color":"green&black",
+    "price":100
+	},
+	"watermellon":{
+    "season":"summer",
+    "color":"green",
+    "price":20
+    } 
+
+}
+print(fruit["mango"]["color"]) 
+mango={
+    "season":"summer",
+    "color":"yellow",
+    "price":120
+    },
+apple={
+    "season":"all",
+    "color":"red",
+    "price":70
+    },
+grape={
+    "season":"summer",
+    "color":"green&black",
+    "price":100
+	},
+watermellon={
+    "season":"summer",
+    "color":"green",
+    "price":20
+    } 
+
+fruit={
+    "wateremellon":watermellon,
+    "mango":mango,
+    "apple":apple,
+    "grape":grape,
+}
+mango=dict(fruit)
+print(mango)
+for x in fruit.keys():
+  print(x)
+for x in fruit.values():
+  print(x)
+for x in fruit.items():
+  print(x)
+fruit.clear()
+del fruit
+fruit.pop("color")
+fruit.popitem()
+fruit.update({"color":"redish yellow", "price":120})
+fruit["season"]="monsoon"
+x = dictfruit.keys()
+x = dictfruit.values()
+x = dictfruit.items()
+x = dictfruit.get("name")
+print(dictfruit["price/kg"])
+a=set(("apple", "banna", "mango", True, 2, 3))
+a.remove(True)
+print(a) 
+b={1, 2, 3}
+a.intersection_update(b)
+b.discard(4)
+c=a.symmetric_difference(b)
+a.symmetric_difference_update(b)
+c=a.intersection(b)
+c=a.union(b)
+a.update(b)
+print(c) 
+for x in thisset:
+newset={"fruits", "numbers"}
+thisset.pop()
+del thisset
+thisset.clear()
+thisset.add("orange")
+mytuple=tuple((1, "apple", "cherry", "berry", 5.34, 5, 5))
+print(x)
+x=round(mytuple[4])
+thistuple=("crush", "boy", "fucks", "girl")
+newtuple=thistuple*2
+print(newtuple)
+mytuple+=thistuple
+for x in mytuple:
+	print(x)
+for i in range(len(mytuple)):
+	print(mytuple[i])
+(number1, *fruitred, number2)=mytuple
+print(number1)
+print(number2)
+print(fruitred)
+oneitem=("crush", )
+mytuple += oneitem
+y=list(mytuple)
+y[2]="banna"
+x=tuple(y)
+print(x)
+print(mytuple[:3])
+print(mytuple[3:])
+print(type(mytuple))
+print(oneitem)
+print(len(mytuple))
 cont from tuples...
 
 thislist=[1, 6, 4, 3, 5, 2]
 cpylist=thislist.copy()
-
 list1=thislist+cpylist
 print(list1)
 cpylist.append(100)
