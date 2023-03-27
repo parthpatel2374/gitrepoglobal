@@ -8,6 +8,39 @@
 
 
 """
+for x in range(5, 30, 5):
+    print(x)
+else:
+    print("this is the end")
+fruits=["apple", "banna", "mango"]
+for x in fruits:
+    print(x)
+    if(x=="banna"):
+        continue    
+for x in "banna":
+    print(x)
+i=1
+while i<10:
+    i+=1
+    print(i)
+else:
+    print("i is now >10")
+print(i)
+    if(i%2==0):
+        continue
+a=200
+b=33
+if b>a:
+    pass
+print("this has passed")
+print("a = ", a) if(a>b) else print("b = ", b)
+if a>b: print("a = ", a)
+if a<b:
+    print("a = ", a)
+elif(a==b):
+    print("a&b = ", a, b)
+else:
+    print("b = ", b)
 cont from functions.....
 
 fruit={
