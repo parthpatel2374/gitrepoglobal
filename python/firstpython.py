@@ -7,8 +7,58 @@
 
 
 
+
 """
+cont from iterators....
+
+class person:
+    def __init__(self, fnam, lnam):
+        self.fname=fnam
+        self.lname=lnam
+    a=100
+    def printname(self):
+        print(self.fname, self.lname)
+class student(person):
+    def __init__(self, fnam, lnam):
+        super().__init__(fnam, lnam)
+
+x=person("parth", "patel")
+x.printname()
+x=student("vrund", "patel")
+x.printname()
+print(x.a)
+class mclass:
+    def __init__(self, a, b):  
+        self.a = a
+        self.b = b
+    def __str__(self):
+        return f"{self.a} {self.b}"
+    def println(self):
+        return self.a*self.b
+
+obj = mclass(10, 20)
+print(obj.a)
+print(obj.b)
+print(obj.println())
+print(obj)
+def myfin(x):
+  return lambda a: a*x    
+myfun = myfin(10)
+print(myfun(10))
+def myfun(x):
+    return 5+x
+print(myfun(20))
+  for x in fruits:
+    print(x)
+frut=["apple", "banna", "mango"]
+myfun(frut)
+  print("this is "+state["maharashtra"]+" fruit.")
+myfun(kashmir="apple", maharashtra="sugarcane", gujarat="mango")
+  print("this is "+fruits[1]+" fruit.")
+myfun("apple", "banna", "mango")
+    print("hellow from this function.")
 cont from functions...
+
 for x in range(5, 30, 5):
     print(x)
 else:
