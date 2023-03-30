@@ -9,6 +9,12 @@
 
 
 """
+import newmodule
+newmodule.greet("parth")
+a = newmodule.person1["country"]
+print(a)
+b = dir(newmodule)
+print(b)
 cont from iterators....
 
 class person:
