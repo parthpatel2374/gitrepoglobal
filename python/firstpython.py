@@ -1,8 +1,3 @@
-import camelcase
-
-c= camelcase.CamelCase()
-txt = "hello world"
-print(c.hump(txt))
 
 
 
@@ -13,6 +8,10 @@ print(c.hump(txt))
 
 
 """
+import camelcase
+c= camelcase.CamelCase()
+txt = "hello world"
+print(c.hump(txt))
 import json
 x = {
   "name": "John",
