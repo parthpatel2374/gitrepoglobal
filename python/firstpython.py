@@ -4,10 +4,11 @@
 
 
 
-
-
-
 """
+mybike = "There is my bike named {name}. It has {number} tyres, and two {sound}."
+print(mybike.format(name="gorbik", sound="horns", number=2))
+name = input()
+print("his name is",name)
 x = "hello"
 if not type(x) is int:
   raise TypeError("Only integers are allowed")
