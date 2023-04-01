@@ -4,7 +4,40 @@
 
 
 
+
 """
+cont from libs...
+
+import os
+#os.rmdir("delfolder")
+os.rmdir("/Users/parthpatel/Desktop/gitrepoglobal/python/delfolder")
+if os.path.exists("/Users/parthpatel/Desktop/gitrepoglobal/python/newmodule.txt"):
+    os.remove("/Users/parthpatel/Desktop/gitrepoglobal/python/newmodule.txt")
+else:
+    print("file not exists")
+f = open("file1.txt", "w")
+f.write("some text is being written in this file.")
+f.close()
+f = open("file1.txt", "r")
+print(f.read())
+f.close()
+f1 = open("file1.txt", "x")
+f2 = open("module.txt", "x")
+if(f2):
+    print("both files open")
+f1.close()
+f2.close()
+f =open("module.txt", "a")
+f.write("now there is more content.")
+f.close()
+f = open("module.txt", "r")
+print(f.read())
+f.close()
+for x in f:
+    print(x)
+f.close()
+f = open("/Users/parthpatel/Desktop/gitrepoglobal/python/newmodule.txt", "r")
+print(f.readline())
 mybike = "There is my bike named {name}. It has {number} tyres, and two {sound}."
 print(mybike.format(name="gorbik", sound="horns", number=2))
 name = input()
